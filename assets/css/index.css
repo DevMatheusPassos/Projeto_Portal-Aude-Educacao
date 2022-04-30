@@ -1,0 +1,191 @@
+/* Definições básicas */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #f3f4f6;
+}
+img {
+    display: inline-block;
+    width: 48px;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+.--selected {
+    border-top: 3px solid #ffd30a !important;
+    color: #333 !important;
+}
+
+/* Estilizando */
+/* Header */
+#container {
+    display: grid;
+    grid-template-rows: repeat(3, fit-content);
+    min-height: 100vh;
+    position: relative;
+}
+.header {
+    grid-row: 3 / 4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    height: fit-content;
+    background-color: #fff;
+}
+.header__logo {
+    display: none;
+}
+.menu__list, .menu__link {
+    display: flex;
+}
+.menu__item {
+    border-top: 3px solid transparent;
+    flex-grow: 1;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #999;
+   
+}
+.menu__link {
+    width: 100%;
+    padding: .5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: color .3s;
+}
+.menu__item:hover {
+    color: #555;
+}
+
+/* Main */
+.main {
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.main__contentTop {
+    height: 4rem;
+    padding: 0 1rem;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #cccccc
+}
+.main__contentTop select {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 .5em;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: .96rem;
+    color: #444; /* #f3f4f6 */
+}
+.main__contentCenter {
+    max-width: 650px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contentCenter__courseware {
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 1px 5px #cccccc;
+    cursor: pointer;
+    background-color: #fff;
+}
+.contentCenter__courseware:hover {
+    box-shadow:  0px 5px 15px #c0bfbf;
+}
+.contentCenter__courseware span {
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #555;
+}
+.contentCenter__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contentCenter__gridItem {
+    width: 100%;
+    padding: 1.8rem .8rem;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+}
+.contentCenter__gridItem:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-color: rgba(43, 43, 43, 0.164);
+}
+.contentCenter__gridItem span {
+    position: relative;
+    z-index: 20;
+    color: white;
+}
+.contentCenter__gridItem:nth-child(1) {
+    background-image: url("../images/main/backgrounds/lingua-portuguesa.jpg");
+}
+.contentCenter__gridItem:nth-child(2) {
+    background-image: url("../images/main/backgrounds/matematica.jpg");
+}
+.contentCenter__gridItem:nth-child(3) {
+    background-image: url("../images/main/backgrounds/geografia.jpg");
+}
+.contentCenter__gridItem:nth-child(4) {
+    background-image: url("../images/main/backgrounds/historia.jpg");
+}
+.contentCenter__gridItem:nth-child(5) {
+    background-image: url("../images/main/backgrounds/arte.jpg");
+}
+.contentCenter__gridItem:nth-child(6) {
+    background-image: url("../images/main/backgrounds/lingua-inglesa.jpg");
+}
+.contentCenter__gridItem:nth-child(7) {
+    background-image: url("../images/main/backgrounds/lingua-espanhola.jpg");
+}
+.contentCenter__gridItem:nth-child(8) {
+    background-image: url("../images/main/backgrounds/literatura.jpg");
+}
+.contentCenter__gridItem:nth-child(9) {
+    background-image: url("../images/main/backgrounds/redacao.jpg");
+}
+.contentCenter__gridItem:nth-child(10) {
+    background-image: url("../images/main/backgrounds/sociologia.jpg");
+}
+.contentCenter__gridItem:nth-child(11) {
+    background-image: url("../images/main/backgrounds/biologia.jpg");
+}
+.contentCenter__gridItem:nth-child(12) {
+    background-image: url("../images/main/backgrounds/filosofia.jpg");
+}
+.contentCenter__gridItem:nth-child(13) {
+    background-image: url("../images/main/backgrounds/fisica.jpg");
+}
+.contentCenter__gridItem:nth-child(14) {
+    background-image: url("../images/main/backgrounds/quimica.jpg");
+}
