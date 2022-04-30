@@ -75,7 +75,11 @@ li {
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 22px;
+}
+.main > * {
+    width: 100%;
 }
 .main__contentTop {
     height: 4rem;
@@ -97,7 +101,7 @@ li {
 }
 .main__contentCenter {
     max-width: 650px;
-    margin: 0 15px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
