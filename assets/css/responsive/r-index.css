@@ -1,0 +1,42 @@
+@media screen and (min-width: 576px) {
+    .contentCenter__courseware {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contentCenter__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 15px 30px;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .--selected {
+        border-top: none!important;
+        border-bottom: 3px solid #ffd30a !important;
+        color: #333 !important;
+    }
+    .header {
+        border-bottom: 1px solid #dee2e6;
+        position: static;
+        grid-row: 1 / 2;
+    }
+    .header > .--max-width-900 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__logo {
+        display: block;
+        width: 80px;
+    }
+    .menu__link {
+        padding: .3em .8em;
+        flex-direction: row;
+        gap: 10px;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    .main {
+        padding-bottom: 2rem;
+    }
+}
