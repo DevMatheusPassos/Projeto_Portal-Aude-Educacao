@@ -22,8 +22,12 @@ li {
     list-style: none;
 }
 .--selected {
-    border-top: 3px solid #ffd30a !important;
+    border-top: 2px solid #ffd30a !important;
     color: #333 !important;
+}
+.--max-width-900 {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Estilizando */
@@ -56,7 +60,6 @@ li {
     font-size: 13px;
     font-weight: bolder;
     color: #999;
-   
 }
 .menu__link {
     width: 100%;
@@ -87,17 +90,16 @@ li {
     display: grid;
     place-items: center;
     background-color: #fff;
-    box-shadow: 0 1px 5px #cccccc
+    box-shadow: 0 1px 5px #cccccc;
 }
 .main__contentTop select {
     width: 100%;
-    max-width: 900px;
     padding: 0 .5em;
     border: none;
     font-family: inherit;
     font-weight: bold;
     font-size: .96rem;
-    color: #444; /* #f3f4f6 */
+    color: #444;
 }
 .main__contentCenter {
     max-width: 650px;
@@ -118,7 +120,7 @@ li {
     background-color: #fff;
 }
 .contentCenter__courseware:hover {
-    box-shadow:  0px 5px 15px #c0bfbf;
+    box-shadow:  0px 8px 15px #c0bfbf;
 }
 .contentCenter__courseware span {
     letter-spacing: 1px;
