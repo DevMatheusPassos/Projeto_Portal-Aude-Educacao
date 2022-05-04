@@ -11,7 +11,7 @@
         <link rel="shortcut icon" href="assets/images/header/favicon.ico">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/responsive/r-index.css">
-        <script src="assets/js/header.js"></script>
+        <script src="assets/js/header.js" defer></script>
 
         <title>Portal Aude Educação - Git</title>
     </head>
@@ -24,27 +24,27 @@
                     </div>
                     <nav class="header__menu">
                         <ul class="menu__list">
-                            <li class="menu__item --selected">
-                                <a href="#" class="menu__link">
-                                    <img src="assets/images/header/nav-aprender-active.2191a61f.svg" alt="">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link --selected" onclick="activeOption(0)">
+                                    <img src="assets/images/header/nav-aprender.svg" alt="">
                                     <span>Aprender</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    <img src="assets/images/header/nav-escola.cf0d235f.svg" alt="">
+                                <a href="#" class="menu__link" onclick="activeOption(1)">
+                                    <img src="assets/images/header/nav-escola.svg" alt="">
                                     <span>Escola</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    <img src="assets/images/header/nav-diag360.90be76c5.svg" alt="">
+                                <a href="#" class="menu__link" onclick="activeOption(2)">
+                                    <img src="assets/images/header/nav-diag360.svg" alt="">
                                     <span>Diagnóstico</span>
                                 </a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    <img src="assets/images/header/nav-profile.78eb747a.svg" alt="">
+                                <a href="#" class="menu__link" onclick="activeOption(3)">
+                                    <img src="assets/images/header/nav-profile.svg" alt="">
                                     <span>Perfil</span>
                                 </a>
                             </li>
